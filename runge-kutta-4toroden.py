@@ -50,7 +50,7 @@ root = tk.Tk()
 root.title("Runge-Kutta 4° Orden")
 
 
-tk.Label(root, text="Función (use 'x' y 'y' como variables):").grid(row=0, column=0, padx=10, pady=10)
+tk.Label(root, text="Función (** para potencia y *para multiplicar):").grid(row=0, column=0, padx=10, pady=10)
 func_entry = tk.Entry(root, width=30)
 func_entry.grid(row=0, column=1, padx=10, pady=10)
 

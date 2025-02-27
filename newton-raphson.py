@@ -43,7 +43,7 @@ def newton_raphson():
 ventana = tk.Tk()
 ventana.title("Método de Newton-Raphson")
 
-tk.Label(ventana, text="Función (f(x)):").grid(row=0, column=0, padx=10, pady=10)
+tk.Label(ventana, text="Función (f(x) ** para potencia y *para multiplicar):").grid(row=0, column=0, padx=10, pady=10)
 entrada_funcion = tk.Entry(ventana)
 entrada_funcion.grid(row=0, column=1, padx=10, pady=10)
 

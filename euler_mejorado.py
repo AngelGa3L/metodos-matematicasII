@@ -30,7 +30,7 @@ def resolver():
         
         tabla.delete(*tabla.get_children())
         for n, x, y, y_pred in resultados:
-            tabla.insert("", "end", values=(n, x, y, y_pred))  # Insertar n, x, y, y_pred en la tabla
+            tabla.insert("", "end", values=(n, x, y, y_pred)) 
         
     except Exception as e:
         messagebox.showerror("Error", f"Ocurrió un error: {e}")
@@ -40,7 +40,7 @@ ventana = tk.Tk()
 ventana.title("Método de Euler Mejorado")
 
 
-tk.Label(ventana, text="Función (use 'x' y 'y' como variables):").grid(row=0, column=0, padx=10, pady=10)
+tk.Label(ventana, text="Función (** para potencia y *para multiplicar):").grid(row=0, column=0, padx=10, pady=10)
 entrada_funcion = tk.Entry(ventana)
 entrada_funcion.grid(row=0, column=1, padx=10, pady=10)
 
